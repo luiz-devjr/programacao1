@@ -42,3 +42,19 @@
   
 
 fim*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+ int main ()
+{
+   int d;
+   float entrada,saida;
+   
+	printf("digite dia da semana: ");
+	scanf ("%d",&d);
+	printf("informe o valor recebido do dia:\n");
+	scanf("%f",&entrada);
+
+	
+}
