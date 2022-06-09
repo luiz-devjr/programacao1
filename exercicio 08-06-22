@@ -36,71 +36,126 @@ printf("valor:%f valor:%f", meuDecimal, meuDecimal);
 printf("nome: %s valor:%f valor:%d", meuCaractere, meuDecimal, meuNumero);
 printf("valor:%d nome: %s valor:%f valor:%d", meuNumero, meuCaractere, meuDecimal, meuNumero);
 
-parei na quatro
+
 4. Crie variáveis e crie o código necessário para que seja impresso na tela as seguintes mensagens:
 
 a)
 A soma de 4 e 9 é 13.
+#include<stdio.h>
+
+int main()
+{
+	int a=4,b=9,soma;
+	
+	soma= a+b;
+	printf("a soma de 4+9 equivale a:  %d",soma);
+}
 
 b)
 => o produto de 5 e 5 é 25.
+#include<stdio.h>
+
+int main()
+{
+	int a=5,b=5,produto;
+	
+	produto= a*b;
+	printf("o produto de 5x5 e:  %d",produto);
+}
 
 c)
 Opcao 'A': 24, opcao 'B': 30.
 
+#include<stdio.h>
+
+int main()
+{
+	int A=24,B=30;
+	
+	printf("opcao A:%d opcao B:%d",A,B);
+}
+
 d)
 [caractere digitado: "B"]
 
-5. Complete o código para que seja exibida a soma de 5 + 10 usando as variáveis x e y:
+#include<stdio.h>
 
-???? ???? = ????;
-int y = 10;
-printf("%d", x + y);
+int main()
+{
+	char letra[50] ;
+	
+	printf("digite um caractere: ");
+	scanf ("%s",&letra);
+	
+	printf("caractere digitado: %s",letra);
+}
+
+5. Complete o código para que seja exibida a soma de 5 + 10 usando as variáveis x e y:
+int main()
+{
+ int x = 5;
+ int y = 10;
+ int soma;
+ soma= x+y;
+ printf("\n  %d", x + y);
+}
 
 6. Complete as partes que estão faltando para criar as três variáveis do mesmo tipo:
 
-??? x = 5 ?? y = 6 ?? z = 50;
+int x = 5,int y = 6 ,int z = 50;
 printf("%d", x + y + z);
 
 7. Complete as variáveis abaixo com o tipo correto:
 
-???? meuNumero = 5;
-???? meuNumeroDecimal = 5.99;
-???? meuCaractere = 'D';
+int meuNumero = 5;
+float meuNumeroDecimal = 5.99;
+char meuCaractere = 'D';
 
 8. Complete o código abaixo para multiplicar 5 com 10 e imprimir o resultado:
-int x = 10;
-int y = 5;
-printf("????", x ???? y);
+int main()
+{
+ int x = 10;
+ int y = 5;
+ printf(" :) %d :(", x*y);
+}
 
 9. Coloque o operador correto no código abaixo para que ele imprima as saídas desejadas (valor desejado impresso na tela):
 a)
-int x = 10;
-printf("x: ???", ???);
-printf("x: ???", ???);
+int main()
+{
+ int x = 10;
+ printf("x: %d\n", 10);
+ printf("x: %d\n", 11);
 //saída desejada: 10 11
+}
 
 b)
-int x = 10;
-printf("x: ???", ???);
-printf("x: ???", ???);
+int main()
+{
+ int x = 10;
+ printf("x: %d\n", 11);
+ printf("x: %d", 11);
 //saída desejada: 11 11
+}
 
 c)
-int x = 10;
-printf("x: ???", ???);
-printf("x: ???", ???);
+int main()
+{
+ int x = 10;
+ printf("x: %d\n", 11);
+ printf("x: %d\n", 12);
 //saída desejada: 11 12
+}
 
 10. Complete com somente o valor desejado para que o valor 5 seja adicionado à variável 10:
 int x = 10;
-x ???? 5;
+x =+ 5;
 
 11. Complete as condições abaixo da forma certa para que os códigos tenham a saída desejada:
 a)
 int x = 50;
 int y = 10;
-if (x ??? y) {
+if (x > y) {
     printf("x é maior que y");
 }
 //saída desejada: x é maior que y
