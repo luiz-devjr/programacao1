@@ -36,6 +36,7 @@ printf("valor:%f valor:%f", meuDecimal, meuDecimal);
 printf("nome: %s valor:%f valor:%d", meuCaractere, meuDecimal, meuNumero);
 printf("valor:%d nome: %s valor:%f valor:%d", meuNumero, meuCaractere, meuDecimal, meuNumero);
 
+parei na quatro
 4. Crie variáveis e crie o código necessário para que seja impresso na tela as seguintes mensagens:
 
 a)
