@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+  char vogal;
+  
+  scanf("%c", &vogal);
+  switch (vogal)
+  {
+  case 'A':
+  printf("voce digitou digitou a vogal A\n");
+    break;
+  case 'E':
+  printf("voce digitou digitou a vogal E\n");
+    break;
+  case 'I':
+  printf("voce digitou digitou a vogal I\n");
+    break;
+  case 'O':
+  printf("voce digitou digitou a vogal O\n");
+    break;
+  case 'U':
+  printf("voce digitou digitou a vogal U\n");
+    break;
+   
+  default:
+   printf("voce digitou uma consoante\n");
+  }
+
+}
