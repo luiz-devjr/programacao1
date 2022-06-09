@@ -163,7 +163,7 @@ if (x > y) {
 b)
 int x = ??;
 int y = ??;
-?? (y ??? x) {
+se (y > x) {
     printf("x é maior que y");
 }else {
     printf("x é menor que y");
