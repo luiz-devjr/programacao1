@@ -70,9 +70,10 @@ Opcao 'A': 24, opcao 'B': 30.
 
 int main()
 {
-	int A=24,B=30;
+     cahr c1='A',c2='B';
+     int n1=24,n2=30;
 	
-	printf("opcao A:%d opcao B:%d",A,B);
+	printf("opcao '%c':%d,opcao '%c: %d\n",c1,n1,c2,n2);
 }
 
 d)
@@ -82,12 +83,9 @@ d)
 
 int main()
 {
-	char letra[50] ;
+	char c1='B';
 	
-	printf("digite um caractere: ");
-	scanf ("%s",&letra);
-	
-	printf("caractere digitado: %s",letra);
+	printf("[caractere digitado:\"%c\"]\n",c1);
 }
 
 5. Complete o código para que seja exibida a soma de 5 + 10 usando as variáveis x e y:
@@ -142,14 +140,14 @@ c)
 int main()
 {
  int x = 10;
- printf("x: %d\n", 11);
- printf("x: %d\n", 12);
+ printf("x: %d\n", ++x);
+ printf("x: %d\n", ++x);
 //saída desejada: 11 12
 }
 
 10. Complete com somente o valor desejado para que o valor 5 seja adicionado à variável 10:
 int x = 10;
-x =+ 5;
+x += 5;
 
 11. Complete as condições abaixo da forma certa para que os códigos tenham a saída desejada:
 a)
@@ -163,7 +161,7 @@ if (x > y) {
 b)
 int x = ??;
 int y = ??;
-se (y > x) {
+se (y < x) {
     printf("x é maior que y");
 }else {
     printf("x é menor que y");
