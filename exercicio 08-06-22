@@ -171,8 +171,8 @@ se (y < x) {
 c)
 int x = 20;
 int y = 20;
-?? (x ??? y) {
-    printf("x (???) é maior ou igual a y (???)", ???, ???);
+if (x >= y) {
+    printf("x (20) é maior ou igual a y (20)", x, y);
 } else {
     printf("x é menor que y");
 }
@@ -181,14 +181,14 @@ int y = 20;
 11. Complete o código abaixo para que funcione corretamente:
 int aux;
 printf("Entre com um valor inteiro: ");
-scanf("???", ????);
-if (aux ??? 20 ??? aux < 40) {
+scanf("%d", &aux);
+if (aux > 20 && aux < 40) {
     printf("O valor digitado está entre 20 e 40\n");
-}????? (????????????) {
+}else if (aux = 40 && aux <60) {
     printf("O valor digitado é 40 ou menor que 60\n");
-}????? (????????????) {
+}else if (aux = 60 && aux > 60 ) {
     printf("O valor digitado é 60 ou maior que 60\n");
-} ????? (????????????) {
+} else ( aux = 20 && aux < 20 ) {
     printf("O valor digitado é 20 ou menor que 20\n");
 }
 
@@ -196,11 +196,11 @@ if (aux ??? 20 ??? aux < 40) {
 int x = 50;
 int y = 50;
 
-??? (x ??? y) {
+if (x = y) {
   printf("1");
-} ???????? (x ??? y) {
+} else if (x > y) {
   printf("2");
-} ????? {
+} else {
   printf("3");
 }
 
@@ -208,12 +208,12 @@ int y = 50;
 
 a) 
 int num;
-scanf("Digite um número: "%c", num);
+scanf ("Digite um número: "%d", &num);
 
 b)
 char nome[30];
 printf("Digite seu nome:");
-scanf("%d", nome);
+scanf("%s", nome);
 
 c)
 float num;
