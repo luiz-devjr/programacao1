@@ -213,8 +213,8 @@ scanf ("Digite um número: "%d", &num);
 b)
 char nome[30];
 printf("Digite seu nome:");
-scanf("%s", nome);
+scanf("%s",nome);
 
 c)
 float num;
-scanf("%f", *num);
+scanf("%f", &num);
