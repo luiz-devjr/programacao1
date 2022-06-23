@@ -1,4 +1,4 @@
-//esta dando erro,todos dao o mesmo valor de imposto
+//meu cerebro ta fritando com essa porra,esta dando erro,todos dao o mesmo valor de imposto
 #include <stdio.h>
 
 int main()
