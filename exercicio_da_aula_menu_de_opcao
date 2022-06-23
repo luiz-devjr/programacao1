@@ -1,0 +1,51 @@
+//primeira forma de fazer
+#include <stdio.h>
+
+int main()
+{
+  char opcao;
+  printf("escolha uma opcao");
+  printf("a) 10\n");
+  printf("b) 20\n");
+  printf("c) 30\n");
+  scanf("%c",&opcao);
+  printf("opcao escolhida: %c",opcao);
+  
+  if (opcao=='a' && opcao=='b' && opcao=='c')
+   printf("opcao escolhida: %c",opcao);
+
+  else 
+  do {
+  printf("opcao invalida");
+  printf("escolha uma opcao");
+  printf("a) 10\n");
+  printf("b) 20\n");
+  printf("c) 30\n");
+  scanf("%c",&opcao);
+  printf("opcao escolhida: %c",opcao);
+}while (opcao!='a' && opcao!='b' && opcao!='c' );
+}
+
+//segunda forma de fazer
+#include <stdio.h>
+
+int main()
+{
+  char opcao;
+  printf("escolha uma opcao");
+  printf("a) 10\n");
+  printf("b) 20\n");
+  printf("c) 30\n");
+  scanf("%c",&opcao);
+  printf("opcao escolhida: %c",opcao);
+  
+  do {
+  printf("opcao invalida");
+  printf("escolha uma opcao");
+  printf("a) 10\n");
+  printf("b) 20\n");
+  printf("c) 30\n");
+  scanf("%c",&opcao);
+  printf("opcao escolhida: %c",opcao);
+}while (opcao!='a' && opcao!='b' && opcao!='c' );
+}
