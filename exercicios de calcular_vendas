@@ -1,0 +1,26 @@
+/*atividade-zero_cancelar-01.
+ algoritmo
+ 
+ declarar as variaveis
+ 
+ receber os numros fornecidos em sequencia pelo patrao
+ ler os numeros em sequencia fornecidos pelo patrao
+ 
+ somar em sequencia os numeros informados ate o numero 0 ser falado
+ mostrar o valor total de suas vendas*/
+ 
+#include <stdio.h>
+
+int main ()
+{
+	printf("informe a 1 venda,pressione enter e depois informe a 2 e assim sucessivamente\n");
+	printf("\npara calcular as vendas e terminar a soma pressione numero 0 \n\n");
+	
+	int i,v=0,result=0;
+	
+  do
+  {
+    printf ("informe os numeros de sua venda: \n");
+	scanf("%d", &v);
+  }while(v!=0);
+}
