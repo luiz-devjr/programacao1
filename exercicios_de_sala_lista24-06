@@ -1,0 +1,34 @@
+/*algoritmo
+
+pedir o valor de valor de A,B,C e D
+ler esses valores solicitados
+
+fazer a soma desses valores de acordo com as condicoes do exerc.
+se as condicoes forem verdadeiras
+imprimir que a balanca esta equilibrada
+
+se nao
+imprimir que a balanca nao esta equilibrada
+
+fim*/ 
+
+#include<stdio.h>
+
+int main()
+{
+  int A,B,C,D;
+  
+  printf("informe os valores  das bolas:\n");
+  printf("\nbola A:  \n");
+  printf("bola B:  \n");
+  printf("bola C:  \n");
+  printf("bola D:  \n");
+  scanf("%d %d %d %d",&A,&B,&C,&D);
+  
+  if (A== B+C+D && B+C==D && B==C)
+  printf("<< A balanca esta equilibrada >>");
+   
+  else
+   printf("!!Nao esta equilibrada!!");
+
+}
