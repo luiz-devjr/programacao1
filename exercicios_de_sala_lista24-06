@@ -1,4 +1,4 @@
-questao 1:
+QUESTAO 1:
 /*alogritmo
 
 pedir o valor de valor de A,B,C e D
@@ -99,3 +99,53 @@ int main()
 	  else 
 		   printf("paula ganhou\n"); 
 }
+
+QUESTAO 3:
+
+/*algoritmo
+ variaveis
+  FLOAT volta,t1=0,t2=0(estudante 1 e estudante 2),TV
+ inicio:
+  
+  para volta =1 ate volta=<5:
+    leio tempo 'volta' em TV
+    t1= t1+tv
+  fim do :para
+  
+  para volta=1 ate volta <=5
+   leio tempo da volta em tv
+    t2=t2+tv
+  fim do para
+  
+  se(t1<t2)
+   estudante 1 ganhou
+  senao se (t1==t2)
+   empate
+  senao
+   estudante 2 ganhou 
+  
+fim*/ 
+
+#include<stdio.h>
+
+int main()
+{
+  float volta,t1=0,t2=0,tv;
+  
+  for (volta=1; volta<=5;volta++)
+  {
+  scanf("%f",&tv);
+  t1= t1+tv;
+  }
+  for (volta=1; volta<=5;volta++)
+  {
+  scanf("%f",&tv);
+  t2= t2+tv;
+}
+   if (t1<t2)
+    printf("estudante 1 ganhou!!\n");
+   else if (t1== t2)
+    printf ("empate");
+   
+   else
+    printf("estudante 2 ganhoun\n");
