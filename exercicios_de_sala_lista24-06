@@ -1,4 +1,5 @@
-/*algoritmo
+questao 1:
+/*alogritmo
 
 pedir o valor de valor de A,B,C e D
 ler esses valores solicitados
@@ -31,4 +32,70 @@ int main()
   else
    printf("!!Nao esta equilibrada!!");
 
+}
+
+QUESTAO 2:
+
+/*algoritmo
+ variaveis
+  int n,m,vez=0;
+ 
+ ler os valores de m e n 
+ mostrar na tela "total n"
+ enquanto n>0
+  se a vez=0
+   mostra na tela paula
+   vez=1
+  senao 
+   mostrar carlos na tela
+   vez=1
+  n=n-m
+   se m<0
+    mostrar 0 na tela
+   senao
+    mostrar n
+ fim enquanto
+    
+     se vez==0
+      mostrar que carlos ganhou
+     senao 
+      mostrar que paula ganhou
+  
+fim*/ 
+
+#include<stdio.h>
+
+int main()
+{
+	int n,m,vez=0;
+  
+	printf("informe a quantidade de bolinhas de chocolate: \n");
+	scanf("%d", &n);
+	printf("coloque a quantidade a ser comida:\n");
+	scanf("%d", &m);
+	printf("total de bolinhas: %d\n", n);
+  
+	while (n>0)
+	{   
+		if (vez==0)
+		{
+			printf("paula  -  ");
+			vez=1;
+		}
+		else 
+		{
+			printf("carlos -  ");
+			vez=0;
+		}    
+		n=n-m;
+		if (n<0)
+			printf("0\n");
+		else
+			printf("%d\n", n);
+	}
+	 
+	  if (vez==0)
+		  printf("carlos ganhou\n");  
+	  else 
+		   printf("paula ganhou\n"); 
 }
