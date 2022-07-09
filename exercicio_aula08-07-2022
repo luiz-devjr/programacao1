@@ -1,0 +1,15 @@
+//questao 1
+
+#include<stdio.h>
+
+ int main(){
+ 
+ float vetor[30];
+ int i;
+ 
+ for (i=0;i<30;i++)
+ {
+ vetor[i]= i+1;
+ printf (" vetor[%d] %2.f\n",i,vetor[i]);
+ }
+}
