@@ -13,3 +13,48 @@
  printf (" vetor[%d] %2.f\n",i,vetor[i]);
  }
 }
+
+//questao2 
+
+#include<stdio.h>
+
+ int main(){
+ 
+ float vetor[20];
+ int i;
+ 
+ for (i=0;i<20;i++)
+ {
+ vetor[i]= 2*i;
+ printf (" vetor[%d] %2.f\n",i,vetor[i]);
+ }
+}
+
+//questao 3
+
+
+
+
+
+
+//questao 4
+
+#include<stdio.h>
+
+ int main(){
+ 
+ float vetor[100];
+ int i;
+ 
+ /*for (i=0;i<100;i++)
+ {
+ vetor[i]= 2*i+1;
+ printf (" vetor[%d] %2.f\n",i,vetor[i]);
+ }*/
+ 
+ for (i=0;i<10;i++)
+  {
+   vetor[i]= 2*i+1;
+   printf ("vetor [%d] %2.f\n",i,vetor[i]);
+  }
+}
