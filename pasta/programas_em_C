@@ -1,0 +1,74 @@
+cardapio
+
+#include <stdio.h>
+
+int main ()
+{
+  int dia,pedido;
+  
+    
+       printf (" \n\t\t\t^^^^^ CARDAPIO DA SEMANA ^^^^^\n\n");
+       printf ("-> Os numeros de 1 a 6 correspondem ao dia da semana:\n");
+       printf ("segunda-feira: [1] \n");
+       printf ("terca-feira:   [2]\n");
+       printf ("quarta-feira:  [3]\n");
+       printf ("quinta-feira:  [4]\n");
+       printf ("sexta-feira:   [5]\n");
+       printf ("sabado:        [6]\n\n");
+       printf ("->Nao abrimos aos domingos\n\n");
+   
+       printf ("digite o dia da semana como infomado acima:  ");
+       scanf ("%d",&dia);
+   
+  switch (dia)
+    {
+        case 1:
+            printf ("\n\t-----Opcoes de segunda-feira-----\n");
+            printf ("opcao [1]:\n");
+            printf ("->arroz\n->feijao em calda \n->salada \n->carne de boi \n->suco 200ml\n");
+          break;
+        
+        case 2:
+            printf ("\n\t-----Opcoes de terca-feira-----\n");
+            printf ("opcao [2]:\n");
+            printf (" ->arroz\n ->tropeiro\n ->mandioca cozida\n ->frango grelhado\n");
+            break;
+        
+        case 3:
+            printf ("\n\t-----Opcoes de quarta-feira-----\n");
+            printf ("opcao [3]:\n");
+            printf (" ->macarrao\n ->tropeiro\n ->mandioca cozida\n ->bife de boi\n");
+            break;
+        
+        case 4:
+            printf ("\n\t-----Opcoes de quinta-feira-----\n");
+            printf ("opcao [4]:\n");
+            printf (" ->arroz\n ->feijao\n ->mandioca cozida\n ->mocoto\n");
+            break; 
+       
+        case 5:
+            printf ("\n\t-----Opcoes de sexta-feira-----\n");
+            printf ("opcao [5]:\n");
+            printf (" ->arroz\n ->feijao\n ->mandioca cozida\n ->mocoto\n");
+            break;
+        
+        case 6:
+            printf ("\n\t-----Opcoes de sabado-feira-----\n");
+            printf ("opcao [6]:\n");
+            printf (" ->arroz\n ->feijao tropeiro\n ->salada\n ->farofa\n ->picanha\n");
+            break;
+
+        default:
+           printf ("nada selecionado\n");       
+    }       
+   
+  printf (" pressione 1 para confirmar e qualquer outro para voltar ao inicio\n\n");
+  printf ("  tem certeza que deseja confirmar o pedido?\n");
+  scanf ("%d", &pedido);
+  
+  if (pedido == 1)
+    printf ("pedido confirmado!!!\n");
+  
+  else
+      printf ("voltando ao inicio...\n");
+}
