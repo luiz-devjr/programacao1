@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+typedef struct {
+   char nome[20];
+   int idade;
+   float nota;
+}tipo_aluno;
+  int i;
+  	
+  int main ()
+{
+  tipo_aluno aluno[10];
+  /*printf ("nome do aluno 1:\n");
+  scanf ("%s",aluno[0].nome);
+  printf ("informe idade:\n");
+  scanf ("%d",&aluno[0].idade);
+  printf ("informe a nota:\n");
+  scanf ("%f",&aluno[0].nota);
+  
+  printf ("nome: %s idade: %d nota: %.2f\n\n",aluno[0].nome,aluno[0].idade,aluno[0].nota);*/
+  
+  for (i=0;i<10;i++)
+  {
+    printf ("nome do aluno %d:\n", i);
+    scanf ("%s",aluno[i].nome);
+    printf ("informe idade:\n");
+    scanf ("%d",&aluno[i].idade);
+    printf ("informe a nota:\n");
+    scanf ("%f",&aluno[i].nota);
+    printf("\n");
+  }
+  
+  for (i=0;i<10;i++)
+    printf ("nome: %s idade: %d nota: %.2f\n\n",aluno[i].nome,aluno[i].idade,aluno[i].nota);
+  
+  /*printf ("nome do aluno 2:\n");
+  scanf ("%s",aluno[1].nome);
+  printf ("informe idade:\n");
+  scanf ("%d",&aluno[1].idade);
+  printf ("informe a nota:\n");
+  scanf ("%f",&aluno[1].nota);
+  
+  printf ("nome: %s idade: %d nota: %.2f\n\n",aluno[1].nome,aluno[1].idade,aluno[1].nota);
+  
+  printf ("nome do aluno 3:\n");
+  scanf ("%s",aluno[2].nome);
+  printf ("informe idade:\n");
+  scanf ("%d",&aluno[2].idade);
+  printf ("informe a nota:\n");
+  scanf ("%f",&aluno[2].nota);
+  
+  printf ("nome: %s idade: %d nota: %.2f\n\n",aluno[2].nome,aluno[2].idade,aluno[2].nota);*/
+  
+  
+}
