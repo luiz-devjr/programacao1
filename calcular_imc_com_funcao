@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+   typedef struct{
+   float peso,altura;
+   } tipoIMC;
+   
+   float imc_calc(tipoIMC *imc)
+   {
+     float result;
+     result=imc->peso/pow(imc->altura,2);
+     printf ("%f\n",result);
+     return (result);
+   }
+   
+int main ()
+{
+  float result;
+  tipoIMC *imc;
+  imc=malloc(sizeof(tipoIMC));
+  printf ("imforme seu peso:\n");
+  scanf("%f",&imc->peso);
+  printf ("imforme seu altura:\n");
+  scanf("%f",&imc->altura);
+  result=imc_calc(imc);
+  printf("%f\n",result);
+
+}
+
+//programa com funcao para calcular tantos vetores
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+ float soma(float *vet,int tam){
+ int i;
+ float result=0;
+ for(i=0;i<tam;i++)
+ result+=vet[i];
+ return result;
+ }
+   
+int main ()
+{
+  float vet[10];
+  int i;
+  
+  for(i=0;i<10;i++)
+  vet[i]=i*i+3;
+  
+  printf ("%f\n",soma(vet,10));
+
+}
