@@ -24,3 +24,36 @@ int main()
         printf ("quantidade de pares: %d\n",par);
         
  }
+ 
+ /*criar vetor com 10 posicoes do tipo int e preencher com scanf e depois multiplicar os conteudos de A
+por 10 e armazenar no vetor B*/
+#include <stdio.h>
+
+int main ()
+{
+  int A[10],B[10];
+  int i;
+   
+   for (i=0;i<10;i++)
+   {
+     printf ("[%d]-digite os dados do vetor A:",i);
+     scanf ("%d",&A[i]); 
+   }
+   
+   printf ("vetores fornecidos:\n");
+   
+   for (i=0;i<10;i++)
+   {
+     printf ("A[%d]= %d\n",i,A[i]); 
+   }
+   
+   for (i=0;i<10;i++)
+   {
+     B[i] = A[i]*10;
+   }
+   
+   printf ("vetor B,obtido atraves da multiplicacao do vetor A x 10\n");
+   
+   for (i=0;i<10;i++)
+   printf ("B[%d] = %d\n",i,B[i]);
+}
