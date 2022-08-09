@@ -1,0 +1,22 @@
+//Crie um vetor de 20 posições e preencha com múltiplos de 2, sendo cada posição com valor 2*seu índice
+
+#include <stdio.h>
+
+int main()
+{
+	int mult[20]= {},i;
+	
+    for (i=0;i<20;i++)
+    {
+    	mult[i]=i;
+    }
+    
+    for (i=0;i<20;i++)
+     printf ("vetor [%d] = %d\n",mult[i],i+1);
+     
+    printf ("\tmultiplos do vetor acima:\n");
+    
+    for (i=0;i<20;i++)
+     printf ("vetor [%d] = %d\n",mult[i],mult[i]*2);
+
+}
