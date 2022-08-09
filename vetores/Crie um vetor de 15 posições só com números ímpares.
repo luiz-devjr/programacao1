@@ -1,0 +1,20 @@
+//Crie um vetor de 15 posições só com números ímpares.
+
+#include <stdio.h>
+
+int main ()
+{
+	int impar[15]={},i;
+	
+	printf ("\tvetores de 15 posicoes so com numeros impares\n");
+	
+	for (i=0;i<15;i++)
+	 impar[i]=i;
+	 
+	 for (i=0;i<15;i++)
+	{
+	  if (impar[i]%2==1)
+	    printf ("vetor [%d]\n",impar[i]);
+	   
+	}
+}
