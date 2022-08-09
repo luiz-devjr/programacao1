@@ -1,0 +1,59 @@
+// programa com vetor numeros imppares e pares
+#include <stdio.h>
+
+int main()
+{
+    int vet[10]= {1,2,3,4,5,6,7,8,9,12};
+    int i,impar,par;
+    
+    for (i=1;i<10;i++)
+    {
+        if (vet[i] % 2 == 1)
+        {  
+		   printf("impar [%d]\n",vet[i]);
+           impar++;
+        }
+      else
+        {  
+		   printf ("par [%d]\n", vet[i]);
+           par++;
+        }
+	}  
+
+        printf ("quantidade de numeros impares: %d\n", impar);
+        printf ("quantidade de pares: %d\n",par);
+        
+ }
+ 
+ /*criar vetor com 10 posicoes do tipo int e preencher com scanf e depois multiplicar os conteudos de A
+por 10 e armazenar no vetor B*/
+#include <stdio.h>
+
+int main ()
+{
+  int A[10],B[10];
+  int i;
+   
+   for (i=0;i<10;i++)
+   {
+     printf ("[%d]-digite os dados do vetor A:",i);
+     scanf ("%d",&A[i]); 
+   }
+   
+   printf ("vetores fornecidos:\n");
+   
+   for (i=0;i<10;i++)
+   {
+     printf ("A[%d]= %d\n",i,A[i]); 
+   }
+   
+   for (i=0;i<10;i++)
+   {
+     B[i] = A[i]*10;
+   }
+   
+   printf ("vetor B,obtido atraves da multiplicacao do vetor A x 10\n");
+   
+   for (i=0;i<10;i++)
+   printf ("B[%d] = %d\n",i,B[i]);
+}
