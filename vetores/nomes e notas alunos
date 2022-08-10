@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  float nota[5];
+  int i;
+  char aluno[5][30];
+	
+   printf (" informe os nomes dos alunos:\n\n");	
+   
+	   for (i=0;i<5;i++)
+	   {
+	     printf ("nome do aluno %d:\n",i+1);
+	     scanf ("%s", &aluno[i]);
+	   }
+	   
+   printf (" informe as notas dos alunos respectivamente com o nome fornecidos acima:\n\n");
+    
+	   for (i=0;i<5;i++)
+	   {
+	     printf ("nota do aluno %d:\n",i+1);
+	     scanf ("%f", &nota[i]);
+	   }
+	
+	printf ("\t alunos     notas\n");
+	
+	for (i=0;i<5;i++)
+	   printf ("\t %s ----- %.2f\n",aluno[i],nota[i]);
+
+}
