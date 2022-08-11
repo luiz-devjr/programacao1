@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main ()
+{
+	int i;
+	struct lista
+	{
+		char modelo [3] [30];
+        int ano [3];	
+	    int serie [3];
+    };
+    
+    struct lista carro;
+    
+	  for (i=0;i<3;i++)
+	   {
+		  printf ("informe o modelo do carro %d:\n",i+1);
+		  scanf ("%s", carro.modelo[i]);
+		  printf ("informe o ano do carro %d:\n",i+1);
+		  scanf ("%d",&carro.ano[i]);
+	      printf ("informe a serie do carro %d:\n",i+1);
+		  scanf ("%d",&carro.serie[i]);
+       }
+       
+       printf ("\tcarros informados:\n");
+       
+       for (i=0;i<3;i++)
+       printf (" carro %d\n modelo: %s ano: %d serie: %d\n",i,carro.modelo[i],carro.ano[i],carro.serie[i]);
+	
+}
