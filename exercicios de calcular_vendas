@@ -20,7 +20,12 @@ int main ()
 	
   do
   {
-    printf ("informe os numeros de sua venda: \n");
+    printf ("informe os numeros de sua venda/para sair pressione 0: \n");
 	scanf("%d", &v);
+	result = result+v;
+	
   }while(v!=0);
+  
+  
+  printf ("soma dos numeros fornecidos pelo patrao: %d\n",result);
 }
