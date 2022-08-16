@@ -1,0 +1,40 @@
+/*QUESTAO 7 SITE JEIKS/PROG
+Faça um programa que armazene as notas das provas 1 e 2 de 5 alunos. Depois, calcule e armazene a média arredondada em outro vetor.
+Armazene também a situação do aluno: 1 para Aprovado ou 0 para Reprovado. Então, o programa deve imprimir uma listagem com as notas, a média e a situação de cada aluno.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+	float nota_1[5],nota_2[5];
+	char nome [5] [30];
+	int i,media[5];
+	
+   for (i=0;i<5;i++)//pedindo nota_1 e nome
+	{
+	   printf ("digite o nome do aluno %d:\n",i);
+	   scanf ("%s",&nome[i]);
+	   printf ("informe a primeira nota do aluno %s:\n",nome[i]);
+	   scanf ("%f", &nota_1[i]);
+	   printf ("informe a segunda nota do aluno %s:\n",nome[i]);
+	   scanf ("%f", &nota_2[i]);
+    }
+	
+	printf ("------------------------------------\n");
+	printf ("\taluno \tmedia \tsituacao\n");
+	printf ("\n");
+	
+   for (i=0;i<5;i++)//for para calcular media/aprovados/reprovados
+    { 
+	   media[i] = (nota_1[i] + nota_2[i])/2;
+	    
+		if (media[i] > 7) 
+		  printf ("\t%s \t%d \tAPROVADO\n",nome[i],media[i]);
+		  
+		else
+		  printf ("\t%s \t%d \tREPROVADO\n",nome[i],media[i]);
+    }
+    
+    
+}
