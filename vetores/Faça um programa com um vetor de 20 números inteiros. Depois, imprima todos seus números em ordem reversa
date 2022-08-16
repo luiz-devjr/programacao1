@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+	int i,vet[20];
+	
+	for (i=0;i<20;i++)
+	  vet[i]=i;
+	
+	for (i=0;i<20;i++)
+	  printf ("vetor [%d]= %d\n",i,vet[i]);
+	
+	printf ("---------------------------------------\n");
+	
+	for (i=19;i>=0;i--)
+	  printf ("vetor [%d]= %d\n",i,vet[i]);
+}
