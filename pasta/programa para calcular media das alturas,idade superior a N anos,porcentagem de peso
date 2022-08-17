@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main ()
+{
+    int n,i,idade,peso,n_idade=0;
+    float altura,total_alturas=0,total_peso=0,n_alturas=0,n_peso=0,porcento_peso=0,media_alturas=0;
+    
+    printf ("quantidade de pessoas: ");
+    scanf ("%d",&n);
+    
+    for (i=0;i<n;i++)
+    { 
+       printf ("informe a idade da [%d] pessoa: \n",i+1);
+       scanf ("%d",&idade);
+        
+       printf ("informe a altura da [%d] pessoa: \n",i+1);
+       scanf ("%f",&altura);
+        
+       printf ("informe o peso [%d] pessoa: \n",i+1);
+       scanf ("%d",&peso);
+        
+        if (idade> 50)
+            n_idade++;
+       
+        if (idade >= 10 && idade <= 20)
+        {
+            total_alturas = total_alturas+altura;
+            n_alturas++;
+        }
+       
+        if (peso < 40)
+        {
+           n_peso++;
+        }  
+    }
+    
+        media_alturas = total_alturas/n_alturas;
+        porcento_peso = (n_peso/n)*100;
+    
+      printf ("quantidade de pessoas acima de 50 anos: %d \n",n_idade);
+      printf ("media altura das pessoas com idade entre 10 e 20 anos: %.2f \n",media_alturas);
+      printf ("porcentagem de pessoas com peso inferior a 40Kg: %.2f%%\n",porcento_peso);
+}
