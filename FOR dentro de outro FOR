@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <conio.h>
+
+int main ()
+{
+	int x,y,resposta;
+	char fim = ' ';
+	
+	for (x=0;x<100 && fim != 'N';x++)
+	{
+		for (y=1;y<10;y++)
+		{
+			printf ("a soma de %d + %d eh?  \n",x,y);
+			scanf ("%d",&resposta);
+		   
+		  if (resposta != (x+y))
+		      printf ("errado!!!\n");
+		      
+		   else
+		      printf ("certo\n");
+		}
+		
+	  printf ("quer somar mais? \n");
+	  fim = toupper(getche());
+	  printf ("\n");
+	  
+	  if (fim == 'N')
+	    printf ("terminando...");
+	
+   }
+	
+}
