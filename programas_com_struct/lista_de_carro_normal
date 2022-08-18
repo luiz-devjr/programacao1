@@ -1,0 +1,32 @@
+//estudando estruturas
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main ()
+{
+	struct lista_carro
+	{
+		char nome [20];
+		int modelo;
+		int ano;		
+	};
+	
+	 struct lista_carro carro;
+	 
+	 printf ("informe nome do carro: ");
+	 scanf ("%s",carro.nome);
+	 printf ("informe o modelo: \n");
+	 scanf ("%d",&carro.modelo);
+	 printf ("qual ano do veiculo: \n");
+	 scanf ("%d", &carro.ano);
+	 
+	 printf ("\t*-*informacoes do carro fornecido*-*\n\n");
+	 
+	 printf ("nome do veiculo fornecido: %s\n",carro.nome);
+	 printf ("modelo do veiculo fornecidos: %d\n",carro.modelo);
+	 printf ("ano do veiculo informado: %d\n",carro.ano);
+	 
+}
+
