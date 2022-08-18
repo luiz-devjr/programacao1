@@ -6,17 +6,17 @@
 
 int main ()
 {
-	struct lista_carro
+	struct espec_carro //especificacao do carro
 	{
 		char nome [20];
 		int modelo;
 		int ano;		
 	};
 	
-	 struct lista_carro carro;
+	 struct espec_carro carro;
 	 
 	 printf ("informe nome do carro: ");
-	 scanf ("%s",carro.nome);
+	 fgets (carro.nome,20,stdin);
 	 printf ("informe o modelo: \n");
 	 scanf ("%d",&carro.modelo);
 	 printf ("qual ano do veiculo: \n");
@@ -25,8 +25,8 @@ int main ()
 	 printf ("\t*-*informacoes do carro fornecido*-*\n\n");
 	 
 	 printf ("nome do veiculo fornecido: %s\n",carro.nome);
-	 printf ("modelo do veiculo fornecidos: %d\n",carro.modelo);
-	 printf ("ano do veiculo informado: %d\n",carro.ano);
+	 printf ("modelo do veiculo %s fornecidos: %d\n",carro.nome,carro.modelo);
+	 printf ("ano do veiculo %s informado: %d\n",carro.nome,carro.ano);
 	 
 }
 
